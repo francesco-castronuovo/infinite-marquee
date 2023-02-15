@@ -1,0 +1,108 @@
+[fc-marquee = wrapper][fc-marquee-direction = horizontal] {
+    -webkit-animation: loop-horizontal linear infinite;
+    -moz-animation: loop-horizontal linear infinite;
+    -o-animation: loop-horizontal linear infinite;
+}
+
+[fc-marquee = wrapper][fc-marquee-direction = vertical] {
+    -webkit-animation: loop-vertical linear infinite;
+    -moz-animation: loop-vertical linear infinite;
+    -o-animation: loop-vertical linear infinite;
+}
+
+[fc-marquee = component]:hover [fc-marquee = wrapper],
+[fc-marquee = component]:focus-within [fc-marquee = wrapper] {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion) {
+    [fc-marquee = wrapper] {
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused;
+    }
+}
+
+@-webkit-keyframes loop-horizontal {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@-moz-keyframes loop-horizontal {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@-o-keyframes loop-horizontal {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes loop-horizontal {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes loop-vertical {
+    0% {
+      transform: translateY(0%);
+    }
+
+    100% {
+      transform: translateY(-100%);
+    }
+}
+
+@-moz-keyframes loop-vertical {
+    0% {
+      transform: translateY(0%);
+    }
+
+    100% {
+      transform: loop-vertical(-100%);
+    }
+}
+
+@-o-keyframes loop-vertical {
+    0% {
+      transform: translateY(0%);
+    }
+
+    100% {
+      transform: translateY(-100%);
+    }
+}
+
+@keyframes loop-vertical {
+    0% {
+      transform: translateY(0%);
+    }
+
+    100% {
+      transform: translateY(-100%);
+    }
+}
