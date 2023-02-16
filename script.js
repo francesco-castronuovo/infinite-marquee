@@ -1,11 +1,7 @@
 const wrapper = document.querySelector('[fc-marquee=wrapper]')
 const wrapperClone = wrapper.cloneNode(true);
 
-// Update the ID and add a class
-//clone.id = 'elem2';
-//clone.classList.add('text-large');
-
-wrapperClone.after(wrapper)
+wrapper.after(wrapperClone)
 
 let duration = document.querySelector('[fc-marquee-duration]').getAttribute('fc-marquee-duration')
 let wrappers = document.querySelectorAll('[fc-marquee=wrapper]')
