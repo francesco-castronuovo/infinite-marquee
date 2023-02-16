@@ -5,7 +5,7 @@ if(components)
   for(const component of components)
   {
     const wrapperOrigin = document.querySelector('[fc-marquee=wrapper]')
-    const wrapperClone = wrapper.cloneNode(true);
+    const wrapperClone = wrapperOrigin.cloneNode(true);
 
     wrapperOrigin.after(wrapperClone)
 
