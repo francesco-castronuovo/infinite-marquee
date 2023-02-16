@@ -1,13 +1,26 @@
-[fc-marquee-direction = horizontal] {
+[fc-marquee-direction = horizontal] [fc-marquee = wrapper] {
     -webkit-animation: loop-horizontal linear infinite;
     -moz-animation: loop-horizontal linear infinite;
     -o-animation: loop-horizontal linear infinite;
 }
 
-[fc-marquee-direction = vertical] {
+[fc-marquee-direction = vertical] [fc-marquee = wrapper] {
     -webkit-animation: loop-vertical linear infinite;
     -moz-animation: loop-vertical linear infinite;
     -o-animation: loop-vertical linear infinite;
+}
+
+[fc-marquee-direction = horizontal] {
+    display: flex;
+}
+
+[fc-marquee-direction = vertical] {
+    display: flex;
+    flex-direction: column;
+}
+
+[fc-marquee = wrapper] {
+    flex: 0 0 auto;
 }
 
 [fc-marquee = component]:hover [fc-marquee = wrapper],
