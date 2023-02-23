@@ -18,4 +18,7 @@ Webflow.push(function () {
       component.style.webkitAnimationDuration = `${duration}s` 
     }
   }
+  
+  Webflow.destroy()
+  Webflow.require('ix2').init()
 });
