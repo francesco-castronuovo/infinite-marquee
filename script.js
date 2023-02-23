@@ -13,12 +13,9 @@ Webflow.push(function () {
 
       let duration = component.getAttribute('fc-marquee-duration')
       let wrappers = component.querySelectorAll('[fc-marquee=wrapper]')
-
-      for(const wrapper of wrappers)
-      {
-        wrapper.style.animationDuration = `${duration}s`
-        wrapper.style.webkitAnimationDuration = `${duration}s` 
-      }
+      
+      component.style.animationDuration = `${duration}s`
+      component.style.webkitAnimationDuration = `${duration}s` 
     }
   }
 });
