@@ -10,11 +10,23 @@
     -o-animation: loop-vertical linear infinite;
 }
 
-[fc-marquee-direction = horizontal] {
+[fc-marquee-direction = horizontal-reversed] [fc-marquee = wrapper] {
+    -webkit-animation: loop-horizontal-reversed linear infinite;
+    -moz-animation: loop-horizontal-reversed linear infinite;
+    -o-animation: loop-horizontal-reversed linear infinite;
+}
+
+[fc-marquee-direction = vertical-reversed] [fc-marquee = wrapper] {
+    -webkit-animation: loop-vertical-reversed linear infinite;
+    -moz-animation: loop-vertical-reversed linear infinite;
+    -o-animation: loop-vertical-reversed linear infinite;
+}
+
+[fc-marquee-direction = horizontal], [fc-marquee-direction = horizontal-reversed] {
     display: flex;
 }
 
-[fc-marquee-direction = vertical] {
+[fc-marquee-direction = vertical], [fc-marquee-direction = vertical-reversed] {
     display: flex;
     flex-direction: column;
 }
@@ -117,5 +129,87 @@
 
     100% {
       transform: translateY(-100%);
+    }
+}
+
+/* Reversed animations */
+
+@-webkit-keyframes loop-horizontal-reversed {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes loop-horizontal-reversed {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+@-o-keyframes loop-horizontal-reversed {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+@keyframes loop-horizontal-reversed {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes loop-vertical-reversed {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+@-moz-keyframes loop-vertical-reversed {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+@-o-keyframes loop-vertical-reversed {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+@keyframes loop-vertical-reversed {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
     }
 }
