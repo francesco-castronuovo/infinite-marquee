@@ -20,6 +20,8 @@ Webflow.push(function () {
   }
   
   Webflow.destroy()
-  Webflow.require('ix2').init()
-  Webflow.require('lottie').init()
+  if(Webflow.require('ix2') !== undefined)
+    Webflow.require('ix2').init()
+  if(Webflow.require('lottie') !== undefined)
+    Webflow.require('lottie').init()
 });
