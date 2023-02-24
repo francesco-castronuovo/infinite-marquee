@@ -19,6 +19,6 @@ Webflow.push(function () {
     }
   }
   
-  Webflow.destroy()
-  Webflow.require('ix2').init()
+  /*Webflow.destroy()
+  Webflow.require('ix2').init()*/
 });
