@@ -1,4 +1,4 @@
-[fc-marquee-direction = horizontal] {
+[fc-marquee-direction], [fc-marquee-direction = horizontal] {
     -webkit-animation: loop-horizontal linear infinite;
     -moz-animation: loop-horizontal linear infinite;
     -o-animation: loop-horizontal linear infinite;
