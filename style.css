@@ -1,4 +1,14 @@
-[fc-marquee-direction], [fc-marquee-direction = horizontal] {
+[fc-marquee = component] {
+    -webkit-animation: loop-horizontal linear infinite;
+    -moz-animation: loop-horizontal linear infinite;
+    -o-animation: loop-horizontal linear infinite;
+}
+
+[fc-marquee = component] {
+    display: flex;
+}
+
+[fc-marquee-direction = horizontal] {
     -webkit-animation: loop-horizontal linear infinite;
     -moz-animation: loop-horizontal linear infinite;
     -o-animation: loop-horizontal linear infinite;
