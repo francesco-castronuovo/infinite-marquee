@@ -11,7 +11,7 @@ Webflow.push(function () {
 
       wrapperOrigin.after(wrapperClone)
 
-      let duration = component.getAttribute('fc-marquee-duration')
+      let duration = component.getAttribute('fc-marquee-duration') === null ? '120' : component.getAttribute('fc-marquee-duration')
       let wrappers = component.querySelectorAll('[fc-marquee=wrapper]')
       
       component.style.animationDuration = `${duration}s`
