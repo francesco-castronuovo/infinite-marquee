@@ -6,8 +6,12 @@ Webflow.push(function () {
   {
     for(const component of components)
     {
+      const outerWrapper = document.createElement('div')
       const wrapperOrigin = component.querySelector('[fc-marquee=wrapper]')
-      const wrapperClone = wrapperOrigin.cloneNode(true);
+      const wrapperClone = wrapperOrigin.cloneNode(true)
+      
+      component.appendChild(outerWrapper)
+      outerWrapper.appendChild(wrapperOrigin)
 
       wrapperOrigin.after(wrapperClone)
 
