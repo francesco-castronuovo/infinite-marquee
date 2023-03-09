@@ -18,8 +18,10 @@ Webflow.push(function () {
       let duration = component.getAttribute('fc-marquee-duration') === null ? '120' : component.getAttribute('fc-marquee-duration')
       let wrappers = component.querySelectorAll('[fc-marquee=wrapper]')
       
-      outerWrapper.style.animationDuration = `${duration}s`
-      outerWrapper.style.webkitAnimationDuration = `${duration}s` 
+      wrapperOrigin.style.animationDuration = `${duration}s`
+      wrapperOrigin.style.webkitAnimationDuration = `${duration}s` 
+      wrapperClone.style.animationDuration = `${duration}s`
+      wrapperClone.style.webkitAnimationDuration = `${duration}s` 
     }
   }
   
