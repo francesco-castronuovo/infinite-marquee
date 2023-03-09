@@ -1,42 +1,46 @@
 [fc-marquee = component] {
-    -webkit-animation: loop-horizontal linear infinite;
-    -moz-animation: loop-horizontal linear infinite;
-    -o-animation: loop-horizontal linear infinite;
-}
-
-[fc-marquee = component] {
     display: flex;
 }
 
-[fc-marquee-direction = horizontal] {
+[fc-marquee = component] > div {
     -webkit-animation: loop-horizontal linear infinite;
     -moz-animation: loop-horizontal linear infinite;
     -o-animation: loop-horizontal linear infinite;
 }
 
-[fc-marquee-direction = vertical] {
+[fc-marquee = component] > div {
+    display: flex;
+}
+
+[fc-marquee-direction = horizontal] > div {
+    -webkit-animation: loop-horizontal linear infinite;
+    -moz-animation: loop-horizontal linear infinite;
+    -o-animation: loop-horizontal linear infinite;
+}
+
+[fc-marquee-direction = vertical] > div {
     -webkit-animation: loop-vertical linear infinite;
     -moz-animation: loop-vertical linear infinite;
     -o-animation: loop-vertical linear infinite;
 }
 
-[fc-marquee-direction = horizontal-reversed] {
+[fc-marquee-direction = horizontal-reversed] > div {
     -webkit-animation: loop-horizontal-reversed linear infinite;
     -moz-animation: loop-horizontal-reversed linear infinite;
     -o-animation: loop-horizontal-reversed linear infinite;
 }
 
-[fc-marquee-direction = vertical-reversed] {
+[fc-marquee-direction = vertical-reversed] > div {
     -webkit-animation: loop-vertical-reversed linear infinite;
     -moz-animation: loop-vertical-reversed linear infinite;
     -o-animation: loop-vertical-reversed linear infinite;
 }
 
-[fc-marquee-direction = horizontal], [fc-marquee-direction = horizontal-reversed] {
+[fc-marquee-direction = horizontal] > div, [fc-marquee-direction = horizontal-reversed] > div {
     display: flex;
 }
 
-[fc-marquee-direction = vertical], [fc-marquee-direction = vertical-reversed] {
+[fc-marquee-direction = vertical] > div, [fc-marquee-direction = vertical-reversed] > div {
     display: flex;
     flex-direction: column;
 }
@@ -45,8 +49,8 @@
     flex: 0 0 auto;
 }
 
-[fc-marquee = component]:hover,
-[fc-marquee = component]:focus-within {
+[fc-marquee = component] > div:hover,
+[fc-marquee = component] > div:focus-within {
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     -o-animation-play-state: paused;
@@ -54,8 +58,8 @@
 }
 
 @media (prefers-reduced-motion) {
-    [fc-marquee-direction = horizontal], [fc-marquee-direction = horizontal-reversed],
-    [fc-marquee-direction = vertical], [fc-marquee-direction = vertical-reversed]{
+    [fc-marquee-direction = horizontal] > div, [fc-marquee-direction = horizontal-reversed] > div,
+    [fc-marquee-direction = vertical] > div, [fc-marquee-direction = vertical-reversed] > div{
       -webkit-animation-play-state: paused;
       -moz-animation-play-state: paused;
       -o-animation-play-state: paused;
