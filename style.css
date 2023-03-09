@@ -2,7 +2,7 @@
     display: flex;
 }
 
-[fc-marquee = component] > div {
+[fc-marquee = component] [fc-marquee = wrapper] {
     -webkit-animation: loop-horizontal linear infinite;
     -moz-animation: loop-horizontal linear infinite;
     -o-animation: loop-horizontal linear infinite;
@@ -12,25 +12,25 @@
     display: flex;
 }
 
-[fc-marquee-direction = horizontal] > div {
+[fc-marquee-direction = horizontal] [fc-marquee = wrapper] {
     -webkit-animation: loop-horizontal linear infinite;
     -moz-animation: loop-horizontal linear infinite;
     -o-animation: loop-horizontal linear infinite;
 }
 
-[fc-marquee-direction = vertical] > div {
+[fc-marquee-direction = vertical] [fc-marquee = wrapper] {
     -webkit-animation: loop-vertical linear infinite;
     -moz-animation: loop-vertical linear infinite;
     -o-animation: loop-vertical linear infinite;
 }
 
-[fc-marquee-direction = horizontal-reversed] > div {
+[fc-marquee-direction = horizontal-reversed] [fc-marquee = wrapper] {
     -webkit-animation: loop-horizontal-reversed linear infinite;
     -moz-animation: loop-horizontal-reversed linear infinite;
     -o-animation: loop-horizontal-reversed linear infinite;
 }
 
-[fc-marquee-direction = vertical-reversed] > div {
+[fc-marquee-direction = vertical-reversed] [fc-marquee = wrapper] {
     -webkit-animation: loop-vertical-reversed linear infinite;
     -moz-animation: loop-vertical-reversed linear infinite;
     -o-animation: loop-vertical-reversed linear infinite;
