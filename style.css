@@ -49,8 +49,8 @@
     flex: 0 0 auto;
 }
 
-[fc-marquee = component] > [fc-marquee = wrapper]:hover,
-[fc-marquee = component] > [fc-marquee = wrapper]:focus-within {
+[fc-marquee = component] [fc-marquee = wrapper]:hover,
+[fc-marquee = component] [fc-marquee = wrapper]:focus-within {
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     -o-animation-play-state: paused;
@@ -58,7 +58,7 @@
 }
 
 @media (prefers-reduced-motion) {
-    [fc-marquee = component] > [fc-marquee = wrapper]{
+    [fc-marquee = component] [fc-marquee = wrapper]{
       -webkit-animation-play-state: paused;
       -moz-animation-play-state: paused;
       -o-animation-play-state: paused;
