@@ -1,7 +1,3 @@
-[fc-marquee = component] {
-    display: flex;
-}
-
 [fc-marquee = component] [fc-marquee = wrapper] {
     -webkit-animation: loop-horizontal linear infinite;
     -moz-animation: loop-horizontal linear infinite;
